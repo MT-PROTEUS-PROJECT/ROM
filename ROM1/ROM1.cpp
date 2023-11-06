@@ -63,14 +63,14 @@ VOID ROM::simulate(ABSTIME time, DSIMMODES mode)
 			break;
 		case 3:
 			_pins_S[0].set(time, 500, SHI);
-			_pins_S[1].set(time, 500, SHI);
+			_pins_S[1].set(time, 500, SLO);
 			_pins_R[0].set(time, 500, SLO);//PUP
 			_pins_R[1].set(time, 500, SHI);//FE
 			break;
 		case 4:
 			if (F0->isinactive())
 			{
-				_pins_S[0].set(time, 500, SHI);
+				_pins_S[0].set(time, 500, SLO);
 				_pins_S[1].set(time, 500, SLO);
 				_pins_R[0].set(time, 500, SHI);//PUP
 				_pins_R[1].set(time, 500, SLO);//FE
@@ -84,8 +84,8 @@ VOID ROM::simulate(ABSTIME time, DSIMMODES mode)
 			}
 			break;
 		case 5:
-			_pins_S[0].set(time, 500, SHI);
-			_pins_S[1].set(time, 500, SLO);
+			_pins_S[0].set(time, 500, SLO);
+			_pins_S[1].set(time, 500, SHI);
 			_pins_R[0].set(time, 500, SHI);//PUP
 			_pins_R[1].set(time, 500, SLO);//FE
 			break;
@@ -96,8 +96,8 @@ VOID ROM::simulate(ABSTIME time, DSIMMODES mode)
 			_pins_R[1].set(time, 500, SLO);//FE
 			break;
 		case 7:
-			_pins_S[0].set(time, 500, SHI);
-			_pins_S[1].set(time, 500, SLO);
+			_pins_S[0].set(time, 500, SLO);
+			_pins_S[1].set(time, 500, SHI);
 			_pins_R[0].set(time, 500, SHI);//PUP
 			_pins_R[1].set(time, 500, SLO);//FE
 			break;
@@ -119,13 +119,13 @@ VOID ROM::simulate(ABSTIME time, DSIMMODES mode)
 			break;
 		case 9:
 			_pins_S[0].set(time, 500, SLO);
-			_pins_S[1].set(time, 500, SLO);
+			_pins_S[1].set(time, 500, SHI);
 			_pins_R[0].set(time, 500, SHI);//PUP
 			_pins_R[1].set(time, 500, SLO);//FE
 			break;
 		case 10:
 			_pins_S[0].set(time, 500, SLO);
-			_pins_S[1].set(time, 500, SLO);
+			_pins_S[1].set(time, 500, SHI);
 			_pins_R[0].set(time, 500, SLO);//PUP
 			_pins_R[1].set(time, 500, SLO);//FE
 			break;

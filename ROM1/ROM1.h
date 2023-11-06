@@ -6,7 +6,7 @@
 class ROM final : public vsm::model
 {
 public:
-	static constexpr DWORD MODEL_KEY = 0x00000002;
+	static constexpr DWORD MODEL_KEY = 0x00001000;
 
 private:
 
