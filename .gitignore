@@ -4,3 +4,4 @@ Project Backups/
 .vs/
 *.workspace
 *.dll
+*.json
