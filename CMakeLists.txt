@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.19)
 
-project ("ROM1")
+project ("ROM")
 
 # Включите подпроекты.
 add_subdirectory ("ROM1")
